@@ -13,9 +13,7 @@ namespace Calc
         public double SecondNumber { get; set; }
 
         public char Operand { get; set; }
-
-        public double Result { get; set; }
-
+        
         public Data()
         {
             // Empty Constructor
