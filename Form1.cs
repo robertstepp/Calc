@@ -90,7 +90,7 @@ namespace Calc
 
         private void negateBtn_Click(object sender, EventArgs e)
         {
-            // TODO: Create negate click activity
+            // COMPLETE: Create negate click activity
             if (calcDisplay.Text[0] != '-')
             {
                 calcDisplay.Text = "-" + calcDisplay.Text;
