@@ -143,6 +143,7 @@ namespace Calc
         // Negation of the number. Flips between positive and negative.
         private void negateBtn_Click(object sender, EventArgs e)
         {
+            // TODO: Check if display is 0 and doesn't add minus
             // Prepends a minus sign to the display text.
             if (calcDisplay.Text[0] != '-') // Checks if number is positive
             {
