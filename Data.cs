@@ -12,7 +12,7 @@ namespace Calc
 
         public double SecondNumber { get; set; }
 
-        public char Operand { get; set; }
+        public char Operator { get; set; }
         
         public Data()
         {
