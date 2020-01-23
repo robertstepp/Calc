@@ -93,25 +93,25 @@ namespace Calc
         // Clear to the last operand.
         private void clearEntryBtn_Click(object sender, EventArgs e)
         {
+            // Clears the display text
             calcDisplay.Text = "0";
-            // COMPLETE: Clear last entered full number
         }
 
         // Clear all data.
         private void clearBtn_Click(object sender, EventArgs e)
         {
+            // Clears the display text and object data
             calcDisplay.Text = "0";
             calculatorData.FirstNumber = 0;
             calculatorData.SecondNumber = 0;
             calculatorData.Operator = ' ';
-            // COMPLETE: Code the clearing of the result
         }
 
 
         // Remove last digit/operand clicked/added.
         private void backspaceBtn_Click(object sender, EventArgs e)
         {
-            // COMPLETE: Length error when empty
+            // There was an `out of bounds` error when using backspace on empty field
             if (calcDisplay.Text != "0" && calcDisplay.Text.Length > 1)
             {
                 calcDisplay.Text = calcDisplay.Text.Substring(0, calcDisplay.Text.Length - 1);
@@ -143,7 +143,7 @@ namespace Calc
         // Negation of the number. Flips between positive and negative.
         private void negateBtn_Click(object sender, EventArgs e)
         {
-            // COMPLETE: Create negate click activity
+            // Prepends a minus sign to the display text.
             if (calcDisplay.Text[0] != '-') // Checks if number is positive
             {
                 calcDisplay.Text = "-" + calcDisplay.Text;
