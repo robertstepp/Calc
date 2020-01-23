@@ -5,7 +5,11 @@
 // Change History
 // Date         Developer   Description
 // 01212020     rstepp      File creation and initial implementation of the application
-//
+// 01232020     rstepp      Added check for text in box (tryParse)
+//                          Added handling for bksp 'out of bounds' error
+//                          Added CE and C handling
+//                          Removed reset for new number
+//                          Changed font size of textbox and set min size of window
 // References Used
 // Tutor, B. (2016, December 26). Tutor Icons. 
 //      Retrieved January 21, 2020, from https://www.iconfinder.com/iconsets/tutor-icon-set
